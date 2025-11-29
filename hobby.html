@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klarissa - Hobby</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+	
+a { text-decoration: none; color: inherit; }
+.container { width: 90%; margin: auto; }
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.navbar .logo {
+  font-weight: bold;
+  color: #b0ff00;
+  font-size: 24px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar ul li a {
+  color: #ccc;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #b0ff00;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #222;
+}
+.footer p {
+    color: #666;
+    font-size: 16px;
+}
+	.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #b0ff00;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+	
+	/* PAGE TITLES */
+.portfolio-title, .contact-section {
+    text-align: center;
+    padding: 80px 20px 20px;
+}
+.green {
+    color: #00ff68;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.portfolio-card {
+    background: #111;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+}
+.portfolio-card img,
+.portfolio-card video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.portfolio-card:hover {
+    transform: scale(1.03);
+    border: 1px solid #00ff68;
+}
+
+/* CONTACT PAGE */
+.contact-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+.contact-info button.cta {
+    background: #00ff68;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .3s;
+}
+.contact-info button.cta:hover {
+    box-shadow: 0 0 15px #00ff68;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #1a1a1a;
+    color: white;
+}
+.submit-btn {
+    background: #00ff68;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.submit-btn:hover {
+    box-shadow: 0 0 15px #00ff68;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #111;
+}
+
+/* === FOOTER === */
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #222;
+}
+.footer p {
+    color: #666;
+    font-size: 16px;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #b0ff00;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* tombol Back to Home */
+.button-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   /* kiri - kanan */
+    align-items: center;
+    margin-top: 40px;                 /* turunkan dari atas */
+    padding: 0 1px;                  /* jarak kiri kanan */
+}
+
+.rounded-btn {
+    padding: 12px 30px;
+    background: #B6FF00;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.rounded-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* RESPONSIVE MODE (HP) */
+@media (max-width: 600px) {
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-text {
+    width: 100%;
+  }
+
+  .bio-photo {
+    margin: auto;
+  }
+}
+.bio-content1 {    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+}
+.bio-content1 {    flex-direction: column;
+    text-align: center;
+}
+.bio-photo1 {    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #00ff52;
+}
+.bio-photo1 {    margin: auto;
+}
+</style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+	<!-- === NAVBAR === -->
+<nav class="navbar container">
+  <div class="logo">KLARISSA.</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portofolio.html">Profile</a></li>
+	<li><a href="hobby.html">Hobby</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+	
+	<section class="portfolio-title">
+    <h1><span class="green">MY</span> HOBBY</h1>
+    <p>Some of my hobbies and achievements in high school</p>
+</section>
+
+<section class="portfolio-container">
+
+    <!-- Photo Items -->
+    <div class="portfolio-card">
+        <img src="img wd uas/IMG-20240824-WA0024.jpg" alt="">
+        <h3>Basketball internal sparing 3x3 with SMA Bintang Mulia</h3>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="img wd uas/IMG-20230309-WA0062.jpg" alt="">
+        <h3>Basketball sparing 5x5 with SMA Pasundan</h3>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="img wd uas/IMG-20231028-WA0003.jpg" alt="">
+        <h3>Basketball sparing 5x5 with SMP Bintang Mulia</h3>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="img wd uas/IMG-20230118-WA0015.jpg" alt="">
+        <h3>Basketball competition 5x5 with SMA Kalam Kudus</h3>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="img wd uas/IMG-20230721-WA0003.jpg" alt="">
+        <h3>&nbsp;</h3>
+        <h3>Basketball competition 5x5 with SMAN 11 Garut</h3>
+    </div>
+
+    <!-- Video -->
+    <div class="portfolio-card video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/siu7Xd34Wqo?si=Ukzb3Cq2SLZ_t_RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+        <h3>Basketball sparing 5x5 with SMP Bintang Mulia</h3>
+    </div>
+
+</section>
+
+
+<div class="button-row">
+
+    <!-- Tombol Kiri -->
+    <a href="portofolio.html" class="rounded-btn left-btn">
+        ← Previous Page
+    </a>
+
+    <!-- Tombol Kanan -->
+    <a href="contact.html" class="rounded-btn right-btn">
+        Next Page →
+    </a>
+
+</div>
+<!-- === FOOTER === -->
+<footer class="footer">
+	<div class="social-icons">
+    <a href="https://www.instagram.com/klarissa.aurelie/">Instagram</a>
+    <a href="https://www.youtube.com/channel/UCRdavgI--48D8RGEsvpGyvQ">Youtube</a>
+    <a href="https://www.tiktok.com/@xcdxxxsecret">Tiktok</a>
+    <a href="https://web.whatsapp.com/">Whatsapp</a>
+  </div>
+  <p>© 2025 Klarissa Aurelie. All Rights Protected.</p>
+</footer>
+
+
+</body>
+</html>
+</body>
+</html>

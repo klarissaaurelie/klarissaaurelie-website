@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klarissa - Profile</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+a { text-decoration: none; color: inherit; }
+.container { width: 90%; margin: auto; }
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.navbar .logo {
+  font-weight: bold;
+  color: #b0ff00;
+  font-size: 24px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar ul li a {
+  color: #ccc;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #b0ff00;
+}
+
+/* PROFILE SECTION */
+	.profile-container {
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;	/* posisi horizontal ke tengah */
+		align-items: center;		/* posisi vertikal ke tengah */
+		
+		padding: 50px 0;
+		
+	}
+	
+	.profile-content {
+		width: 80%;			/* lebar konten */
+		max-width: 1200px;	/* batas agar tidak terlalu lebar */
+		
+		display: flex;
+		justify-content: space-between; /* teks kiri - gambar kanan */
+		align-items: center;
+		
+		gap: 40px; 			/* jarak antar teks dan foto */
+	}
+	
+	
+.profile-title {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 25px;
+    border-radius: 15px;
+    width: 1200px;
+    border: 1px solid #3a3a3a;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00ff52;
+}
+
+.profile-info {
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.profile-info strong {
+    color: #00ff52;
+}
+
+
+/* FOOTER */
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #222;
+}
+.footer p {
+    color: #666;
+    font-size: 16px;
+}
+	.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #b0ff00;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+	
+	
+	/* UPDATE LAYOUT BIO BAGIAN DALAM */
+.bio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* teks bagian kiri */
+.bio-text {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: normal;
+}
+
+/* foto pindah kanan dan ukurannya tetap */
+.bio-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #00ff52;
+}
+
+/* tombol Back to Home */
+.button-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   /* kiri - kanan */
+    align-items: center;
+    margin-top: 40px;                 /* turunkan dari atas */
+    padding: 0 5px;                  /* jarak kiri kanan */
+}
+
+.rounded-btn {
+    padding: 12px 30px;
+    background: #B6FF00;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.rounded-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* RESPONSIVE MODE (HP) */
+@media (max-width: 600px) {
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-text {
+    width: 100%;
+  }
+
+  .bio-photo {
+    margin: auto;
+  }
+}
+.bio-content1 {    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+}
+.bio-content1 {    flex-direction: column;
+    text-align: center;
+}
+.bio-photo1 {    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #00ff52;
+}
+.bio-photo1 {    margin: auto;
+}
+</style>
+</head>
+<body>
+
+<!-- === NAVBAR === -->
+<nav class="navbar container">
+  <div class="logo">KLARISSA.</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portofolio.html">Profile</a></li>
+	<li><a href="hobby.html">Hobby</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- === PROFILE SECTION === -->
+<section class="profile-title container">
+<h2>PROFILE</h2>
+<div class="profile-title">
+    <div class="profile-card">
+
+        <div class="bio-content">
+
+            <div class="bio-text">
+	 <p><strong>Nama:</strong> Klarissa Aurelie</p>
+    <p><strong>Email:</strong> klarissaaurelie023@gmail.com</p>
+    <p><strong>Alamat:</strong> Bandung, Jawa Barat, Indonesia</p>
+    <p><strong>Pendidikan:</strong> SMA Bintang Mulia</p>
+				
+    <p><strong>Keahlian:</strong> </p>
+	<p>Editing (Capcut, Alight Motion), Design (Canva), Google (Docs, Speardsheets, Slide, Forms) Microsoft Office (Word, Power Point, Excel, Visio), Figma Basic, Coding Basic (HTML, CSS, JavaScript)</p>
+				
+    <p><strong>Pengalaman Organisasi dan Pencapaian:</strong></p>
+	<p>Sertifikat Replay Kalkud Mekar Wangi 2022, Sertifikat Multimedia and Design Binus Bandung 2023, Sertifikat Finalist Geosac UPI 2024, Volunteer Gereja 2022-sekarang (Lighting, Design, PIC Boardgame, Usher), Panitia Seksi Keamanan Futstar SMA Bintang Mulia 2024, Mentor Shepherding SMA Bintang Mulia 2024-2025, Mentor Blast Camp SMA Bintang Mulia 2025, Sertifikat Entrepreneurship Prasetya Mulya 2024, Sertifikat HSK 2 (143/120), Sertifikat Table Manner Course Hotel Santika Bandung 2025, Sertifikat Mentor SMA Bintang Mulia 2024-2025, Magang sebagai kasir dan barista di Moist Cafe (14-23 April 2025), Part Time Game Master di Maple Boardgame (Juli 2025-sekarang)</p>
+  </div>
+      <span class="bio-content1"><img src="img wd uas/WhatsApp Image 2025-10-25 at 13.09.02_d856425a.jpg" class="bio-photo1" alt="Profile Picture"></span></div>
+    </div>
+</div>
+
+	<div class="button-row">
+
+    <!-- Tombol Kiri -->
+    <a href="index.html" class="rounded-btn left-btn">
+        ← Previous Page
+    </a>
+
+    <!-- Tombol Kanan -->
+    <a href="hobby.html" class="rounded-btn right-btn">
+        Next Page →
+    </a>
+
+</div>
+
+
+<!-- === FOOTER === -->
+<footer class="footer">
+	<div class="social-icons">
+    <a href="https://www.instagram.com/klarissa.aurelie/">Instagram</a>
+    <a href="https://www.youtube.com/channel/UCRdavgI--48D8RGEsvpGyvQ">Youtube</a>
+    <a href="https://www.tiktok.com/@xcdxxxsecret">Tiktok</a>
+    <a href="https://web.whatsapp.com/">Whatsapp</a>
+  </div>
+  <p>© 2025 Klarissa Aurelie. All Rights Protected.</p>
+</footer>
+
+</body>
+</html>
